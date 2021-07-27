@@ -13,6 +13,7 @@
 		F0E5CAF926AA2704000F94AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E5CAF726AA2704000F94AF /* Main.storyboard */; };
 		F0E5CAFB26AA2709000F94AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E5CAFA26AA2709000F94AF /* Assets.xcassets */; };
 		F0E5CAFE26AA2709000F94AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E5CAFC26AA2709000F94AF /* LaunchScreen.storyboard */; };
+		F0E5CB0626B0C115000F94AF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5CB0526B0C115000F94AF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F0E5CAFA26AA2709000F94AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0E5CAFD26AA2709000F94AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0E5CAFF26AA2709000F94AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E5CB0526B0C115000F94AF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F0E5CAFA26AA2709000F94AF /* Assets.xcassets */,
 				F0E5CAFC26AA2709000F94AF /* LaunchScreen.storyboard */,
 				F0E5CAFF26AA2709000F94AF /* Info.plist */,
+				F0E5CB0526B0C115000F94AF /* TableViewCell.swift */,
 			);
 			path = LayoutApp;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0E5CAF626AA2704000F94AF /* ViewController.swift in Sources */,
+				F0E5CB0626B0C115000F94AF /* TableViewCell.swift in Sources */,
 				F0E5CAF226AA2704000F94AF /* AppDelegate.swift in Sources */,
 				F0E5CAF426AA2704000F94AF /* SceneDelegate.swift in Sources */,
 			);
