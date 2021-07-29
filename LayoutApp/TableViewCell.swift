@@ -9,9 +9,9 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var textView: UITextView!
-  
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var textView: UITextView!
+    
+    @IBOutlet var avatarImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
