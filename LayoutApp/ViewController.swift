@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     @IBOutlet var commentTextView: UITextView!
     
+    @IBOutlet var wordCountLabel: UILabel!
+    
     override func viewDidLoad() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,14 +34,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-        var image = UIImage(named: "\(indexPath.row + 1)")
-        cell.avatarImage.image = image?.resizeImage(targetSize: CGSize(width: 60, height: 60))
-        
-        return cell
+                let image = UIImage(named: "\(indexPath.row + 1)")
+                cell.avatarImage.image = image
+                
+                return cell
     }
-
-
 }
+/*
 extension UIImage {
   func resizeImage(targetSize: CGSize) -> UIImage {
     let size = self.size
@@ -56,5 +57,4 @@ extension UIImage {
     return newImage!
   }
 }
-
-
+*/
