@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         tableView.allowsSelection = false
+        
+        wordCountLabel.text = "3"
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +40,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.avatarImage.image = image
                 
                 return cell
+    }
+
+    func textViewDidChange(_ commentTextView: UITextView) {
+        var wordCount = 0
+        let separators = CharacterSet(charactersIn: " \n\t")
+        let wordComponents = commentTextView.text.components(separatedBy: separators)
+        let letters = NSCharacterSet.letters
+        for word in wordComponents {
+            if(word.rangeOfCharacter(from: letters) != nil) {
+                wordCount = wordCount + 1
+                print(wordCount)
+            }
+        }
+        
+        wordCountLabel.text = "\(wordCount)"
     }
 }
 /*

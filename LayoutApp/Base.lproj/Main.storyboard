@@ -34,31 +34,29 @@
                                                         <constraint firstAttribute="width" constant="60" id="Tqa-xF-MU1"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hlp-Qw-dK3">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love this picture. Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7V-bo-bz1">
                                                     <rect key="frame" x="90" y="10" width="304" height="60"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="aFj-X3-y3f"/>
+                                                        <constraint firstAttribute="height" constant="60" id="mmB-ee-h7Z"/>
                                                     </constraints>
-                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                                    <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="C7V-bo-bz1" secondAttribute="trailing" constant="20" symbolic="YES" id="5HY-8Z-hAX"/>
+                                                <constraint firstAttribute="bottom" secondItem="C7V-bo-bz1" secondAttribute="bottom" constant="10" id="GOL-tb-iD1"/>
                                                 <constraint firstItem="ZkJ-2J-AjE" firstAttribute="leading" secondItem="pFS-f4-t2X" secondAttribute="leading" constant="10" id="WnY-hD-FNq"/>
-                                                <constraint firstAttribute="trailing" secondItem="hlp-Qw-dK3" secondAttribute="trailing" constant="20" symbolic="YES" id="cDV-Vw-Fh3"/>
                                                 <constraint firstAttribute="bottom" secondItem="ZkJ-2J-AjE" secondAttribute="bottom" constant="10" id="eAo-Da-4BJ"/>
                                                 <constraint firstItem="ZkJ-2J-AjE" firstAttribute="top" secondItem="pFS-f4-t2X" secondAttribute="top" constant="10" id="gWq-4W-MSA"/>
-                                                <constraint firstItem="hlp-Qw-dK3" firstAttribute="leading" secondItem="ZkJ-2J-AjE" secondAttribute="trailing" constant="20" id="iRC-gm-kBj"/>
-                                                <constraint firstAttribute="bottom" secondItem="hlp-Qw-dK3" secondAttribute="bottom" constant="10" id="v4t-j9-40v"/>
-                                                <constraint firstItem="hlp-Qw-dK3" firstAttribute="top" secondItem="pFS-f4-t2X" secondAttribute="top" constant="10" id="vV7-cf-9vP"/>
+                                                <constraint firstItem="C7V-bo-bz1" firstAttribute="top" secondItem="pFS-f4-t2X" secondAttribute="top" constant="10" id="hFa-cO-XR4"/>
+                                                <constraint firstItem="C7V-bo-bz1" firstAttribute="leading" secondItem="ZkJ-2J-AjE" secondAttribute="trailing" constant="20" id="joW-Kp-DGm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="avatarImage" destination="ZkJ-2J-AjE" id="LfI-SF-2tm"/>
-                                            <outlet property="textView" destination="hlp-Qw-dK3" id="6Zh-55-F0n"/>
+                                            <outlet property="commentLabel" destination="C7V-bo-bz1" id="ApB-dP-Fjs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -10,7 +10,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
     @IBOutlet var avatarImage: UIImageView!
     
-    @IBOutlet var textView: UITextView!
+    @IBOutlet var commentLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
